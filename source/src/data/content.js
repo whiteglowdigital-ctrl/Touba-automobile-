@@ -78,7 +78,7 @@ export const BUDGETS = [
 ];
 
 export const FAQ = [
-  ["Quels jours êtes-vous ouverts ?", "Du mardi au dimanche. Nous sommes fermés le lundi. Horaires : [à confirmer]."],
+  ["Quels jours êtes-vous ouverts ?", "Nous sommes ouverts 24h/24, du mardi au dimanche. Nous sommes fermés le lundi."],
   ["Faut-il prendre rendez-vous ?", "[à compléter]"],
   ["Combien coûte un diagnostic ?", "À partir de [prix] F. Vous pouvez aussi demander une estimation gratuite sur WhatsApp avant de venir."],
   ["Vendez-vous des pièces et des pneus seuls ?", "Oui, pièces détachées, pneus et huiles Shell Helix. Demandez le prix sur WhatsApp."],

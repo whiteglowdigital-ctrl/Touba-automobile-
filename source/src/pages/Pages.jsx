@@ -304,7 +304,7 @@ export function Contact() {
   const [map, setMap] = useState(false);
   return (
     <>
-      <PageHero kicker="Contact" title="Le vrai Touba Automobile," accent="c'est ici" img={IMG.night} sub={CONFIG.adresse + ". Ouvert du mardi au dimanche."}>
+      <PageHero kicker="Contact" title="Le vrai Touba Automobile," accent="c'est ici" img={IMG.night} sub={CONFIG.adresse + ". Ouvert 24h/24, du mardi au dimanche."}>
         <div className="mt-10 flex flex-wrap gap-3">
           <Button onClick={() => openBooking()}><Calendar className="h-5 w-5" aria-hidden="true" />Prendre rendez-vous</Button>
           <WhatsAppCta variant="ghost" msg="Bonjour Touba Automobile, ">WhatsApp</WhatsAppCta>
@@ -329,7 +329,7 @@ export function Contact() {
             )}
           </Reveal>
           <Reveal delay={0.1} className="glass grid content-start gap-7 rounded-3xl p-7 md:p-10">
-            {[[MapPin, "Adresse", CONFIG.adresse], [Calendar, "Jours d'ouverture", "Du mardi au dimanche · Fermé le lundi"], [Clock, "Horaires", "[à confirmer]"], [Phone, "WhatsApp et appel", CONFIG.affichage]].map(([Icon, k, v]) => (
+            {[[MapPin, "Adresse", CONFIG.adresse], [Calendar, "Jours d'ouverture", "Du mardi au dimanche · Fermé le lundi"], [Clock, "Horaires", "Ouvert 24h/24"], [Phone, "WhatsApp et appel", CONFIG.affichage]].map(([Icon, k, v]) => (
               <div key={k} className="flex gap-4">
                 <Icon className="mt-1 h-5 w-5 flex-none text-neon" aria-hidden="true" />
                 <div><p className="text-xs uppercase tracking-[0.25em] text-mist/55">{k}</p><p className="mt-1 text-lg font-light text-white">{v}</p></div>

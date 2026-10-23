@@ -1,9 +1,9 @@
 /* ===== À MODIFIER : un seul numéro pour tout le site ===== */
 export const CONFIG = {
-  whatsapp: "221XXXXXXXXX",            // format international sans + ni espaces, ex. 221771234567
-  telephone: "+221XXXXXXXXX",          // pour le bouton « Appeler »
-  affichage: "[Numéro à confirmer]",   // tel qu'il s'affiche, ex. 77 123 45 67
-  horaires: "[Horaires à confirmer]",
+  whatsapp: "221771986114",            // format international sans + ni espaces
+  telephone: "+221771986114",          // pour le bouton « Appeler »
+  affichage: "77 198 61 14",           // tel qu'il s'affiche
+  horaires: "24h/24",                  // du mardi au dimanche, fermé le lundi
   adresse: "Route de Sindia, près de la station MKA, Keur Massamba Gueye, Thiès",
   maps: "Touba Automobile, Route de Sindia, Keur Massamba Gueye, Thiès, Sénégal",
   googleAvis: "#", // lien « Laisser un avis Google » à ajouter

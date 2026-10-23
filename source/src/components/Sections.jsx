@@ -25,7 +25,7 @@ export function Hero() {
         <motion.p initial={{ opacity: 0, y: 12 }} animate={ready ? { opacity: 1, y: 0 } : undefined} transition={{ duration: 0.6 }}
           className="mb-8 inline-flex items-center gap-3 rounded-full border border-white/15 bg-white/[0.05] px-4 py-2 text-sm text-white backdrop-blur">
           <span className="h-2 w-2 animate-pulseDot rounded-full bg-neon" aria-hidden="true" />
-          Ouvert du mardi au dimanche
+          Ouvert 24h/24 · du mardi au dimanche
         </motion.p>
 
         <h1 id="titre-hero" className="display text-[13vw] text-white sm:text-7xl lg:text-[104px]">
