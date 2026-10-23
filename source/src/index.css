@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+  body { background: #0A0A0A; color: #E5E7EB; font-family: "Archivo", system-ui, sans-serif; font-size: 16px; overflow-x: hidden; }
+  :focus-visible { outline: 2px solid #FACC15; outline-offset: 3px; border-radius: 6px; }
+  ::selection { background: #FACC15; color: #0A0A0A; }
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    *, *::before, *::after { animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }
+  }
+}
+
+@layer components {
+  /* Titres massifs : Archivo élargie (wdth 125) */
+  .display { font-family: "Archivo", "Arial Black", sans-serif; font-weight: 900; font-stretch: 125%; font-variation-settings: "wdth" 125; text-transform: uppercase; letter-spacing: -0.01em; line-height: .92; text-wrap: balance; }
+  .eyebrow-num { font-variant-numeric: tabular-nums; }
+  .glass { background: linear-gradient(180deg, rgba(255,255,255,.055), rgba(255,255,255,.015)); border: 1px solid rgba(255,255,255,.09); backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px); }
+  .wrap { width: 100%; max-width: 1240px; margin-inline: auto; padding-left: max(20px, env(safe-area-inset-left, 0px)); padding-right: max(20px, env(safe-area-inset-right, 0px)); }
+  .field-input { width: 100%; min-height: 52px; border-radius: 12px; border: 1px solid rgba(255,255,255,.14); background: rgba(10,10,10,.65); color: #fff; padding: .8rem 1rem; font-size: 1rem; transition: border-color .2s, box-shadow .2s; }
+  .field-input::placeholder { color: #8B8B93; }
+  .field-input:focus { outline: none; border-color: rgba(250,204,21,.8); box-shadow: 0 0 0 3px rgba(250,204,21,.15); }
+  .field-input[aria-invalid="true"] { border-color: #F87171; }
+  .grain::after { content: ""; position: absolute; inset: 0; pointer-events: none; opacity: .06; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2'/%3E%3C/filter%3E%3Crect width='160' height='160' filter='url(%23n)'/%3E%3C/svg%3E"); }
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator { filter: invert(1); opacity: .7; cursor: pointer; }
+select.field-input { appearance: none; background-image: linear-gradient(45deg, transparent 50%, #FACC15 50%), linear-gradient(135deg, #FACC15 50%, transparent 50%); background-position: calc(100% - 22px) 52%, calc(100% - 16px) 52%; background-size: 6px 6px; background-repeat: no-repeat; padding-right: 2.75rem; }
+select.field-input option { background: #161616; color: #fff; }

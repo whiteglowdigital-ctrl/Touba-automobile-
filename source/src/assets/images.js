@@ -1,0 +1,32 @@
+import hero from "./img/hero.webp";
+import night from "./img/night.webp";
+import wet from "./img/wet.webp";
+import porsche from "./img/porsche.webp";
+import supra from "./img/supra.webp";
+import redgarage from "./img/redgarage.webp";
+import detail from "./img/detail.webp";
+import meca from "./img/meca.webp";
+import meca2 from "./img/meca2.webp";
+import diag from "./img/diag.webp";
+import elec from "./img/elec.webp";
+import oil from "./img/oil.webp";
+import brakes from "./img/brakes.webp";
+import wrench from "./img/wrench.webp";
+import tyres from "./img/tyres.webp";
+import engine from "./img/engine.webp";
+import wash1 from "./img/wash1.webp";
+import wash2 from "./img/wash2.webp";
+import sale1 from "./img/sale1.webp";
+import sale2 from "./img/sale2.webp";
+import sale3 from "./img/sale3.webp";
+import rent1 from "./img/rent1.webp";
+import rent2 from "./img/rent2.webp";
+import rent3 from "./img/rent3.webp";
+import assur from "./img/assur.webp";
+import tools from "./img/tools.webp";
+import garage from "./img/garage.webp";
+import toolwall from "./img/toolwall.webp";
+import logo from "./img/logo.webp";
+
+/* Photos libres de droits (Unsplash) — à remplacer par de vraies photos du garage. */
+export const IMG = { hero, night, wet, porsche, supra, redgarage, detail, meca, meca2, diag, elec, oil, brakes, wrench, tyres, engine, wash1, wash2, sale1, sale2, sale3, rent1, rent2, rent3, assur, tools, garage, toolwall, logo };
